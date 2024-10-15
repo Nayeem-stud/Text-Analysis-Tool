@@ -1,0 +1,105 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Adding a gradient background */
+  background: linear-gradient(to right, #4a90e2, #9013fe); /* Gradient from blue to purple */
+  color: #e63946;
+  min-height: 100vh; /* Ensures full height for the body */
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+  padding: 30px; /* Increased padding for a more spacious feel */
+  border-radius: 15px; /* More rounded corners */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5em; /* Larger font size for the title */
+}
+.result li span{
+  color: #0077b6;
+}
+.result li p{
+  color: #1d3557;
+}
+.result p{
+  color: #1d3557;
+}
+.result p span {
+  color: #058c42;
+  font-weight: bold;
+}
+
+
+.text-entry textarea {
+  display: flex;
+  width: 94%;
+  height: 150px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  resize: none;
+}
+
+.text-entry textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px; /* Increased margin for better spacing */
+}
+
+.buttons button {
+  padding: 12px 25px; /* Increased padding for buttons */
+  margin: 0 5px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for a scale effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.text-info {
+  margin-top: 20px;
+}
+
+.text-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-info ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0; /* Increased margin for better readability */
+}
+
+.text-info ul li p {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}

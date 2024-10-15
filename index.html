@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer with AI-ML Features</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/compromise/13.11.0/compromise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sentiment@5.0.2/lib/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/natural/2.1.6/natural.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Sentiment Analyzer</h1>
+        <div class="text-entry">
+            <textarea id="textInput" placeholder="Enter text to analyze..."></textarea>
+        </div>
+        <div class="buttons">
+            <button id="analyzeBtn">Analyze</button>
+            <button id="copyBtn">Copy Results</button>
+        </div>
+
+        <div class="result text-info">
+            <h2>Analysis Result</h2>
+            <ul>
+                <li><p><strong>Character Count:</strong></p><span id="char">0</span></li>
+                <li><p><strong>Word Count:</strong></p><span id="word">0</span></li>
+                <li><p><strong>Sentences:</strong></p><span id="sentences">0</span></li>
+                <li><p><strong>Spaces:</strong></p><span id="spaces">0</span></li>
+                <li><p><strong>Punctuations:</strong></p><span id="punctuations">0</span></li>
+                <li><p><strong>Readability Score:</strong></p><span id="readability">0</span></li>
+            </ul>
+            <p><strong>Sentiment:</strong> <span id="sentimentResult">Neutral</span></p>
+            <p><strong>Keywords:</strong> <span id="keywordsResult">None</span></p>
+            <p><strong>Category:</strong> <span id="categoryResult">General</span></p>
+            <p><strong>Classification:</strong> <span id="classificationResult">Unknown</span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed by ❤️ Nayeem</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
